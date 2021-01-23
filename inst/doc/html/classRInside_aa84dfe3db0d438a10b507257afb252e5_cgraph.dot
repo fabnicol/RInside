@@ -1,0 +1,22 @@
+digraph "RInside::RInside"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RInside::RInside",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="RInside::initialize",height=0.2,width=0.4,color="black",URL="$classRInside.html#ae2c9851abd6c901ac031ae0abc50b763",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="RInside::assign",height=0.2,width=0.4,color="black",URL="$classRInside.html#a0e41cbc2d996147fe39bfa2180e9598c",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="RInside::autoloads",height=0.2,width=0.4,color="black",URL="$classRInside.html#a41c250f2ef249a02a0d32e761628d943",tooltip=" "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="RInside::init_rand",height=0.2,width=0.4,color="black",URL="$classRInside.html#af9920dd157552b7a5dce8573574ce78d",tooltip=" "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="RInside::init_tempdir",height=0.2,width=0.4,color="black",URL="$classRInside.html#ae045f7e3d8b0881e2af8cdfb5c5fc118",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="setenv",height=0.2,width=0.4,color="black",URL="$setenv_8c.html#a9545e85f4f37ceb762218398b01ab149",tooltip=" "];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+}

@@ -1,0 +1,457 @@
+\hypertarget{classRInside}{}\doxysection{R\+Inside Class Reference}
+\label{classRInside}\index{RInside@{RInside}}
+
+
+{\ttfamily \#include $<$R\+Inside.\+h$>$}
+
+
+
+Collaboration diagram for R\+Inside\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classRInside_1_1Proxy}{Proxy}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classRInside_a4cf10e78fb73bfda699f921c28e6b985}{parse\+Eval}} (const std\+::string \&line, S\+E\+XP \&ans)
+\item 
+void \mbox{\hyperlink{classRInside_a1b42c63503ccaf8563202af93cac3487}{parse\+EvalQ}} (const std\+::string \&line)
+\item 
+void \mbox{\hyperlink{classRInside_a29b9eb62d2c78a495f32ea5dc746af5c}{parse\+Eval\+Q\+NT}} (const std\+::string \&line)
+\item 
+\mbox{\hyperlink{classRInside_1_1Proxy}{Proxy}} \mbox{\hyperlink{classRInside_a72826e179cbdefffa1dbb1f4c7fe79c7}{parse\+Eval}} (const std\+::string \&line)
+\item 
+\mbox{\hyperlink{classRInside_1_1Proxy}{Proxy}} \mbox{\hyperlink{classRInside_a076f78eb50651e90dd93b8b1b9983917}{parse\+Eval\+NT}} (const std\+::string \&line)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classRInside_a0e41cbc2d996147fe39bfa2180e9598c}{assign}} (const T \&object, const std\+::string \&nam)
+\item 
+\mbox{\hyperlink{classRInside_aa84dfe3db0d438a10b507257afb252e5}{R\+Inside}} ()
+\item 
+\mbox{\hyperlink{classRInside_a5f447c350de81537e15d5aa1c0ecc428}{R\+Inside}} (const int argc, const char $\ast$const argv\mbox{[}$\,$\mbox{]}, const bool load\+Rcpp=true, const bool \mbox{\hyperlink{MemBuf_8cpp_ab3f078684998b83967d507d0f453f454}{verbose}}=false, const bool interactive=false)
+\item 
+\mbox{\hyperlink{classRInside_a277fc333d12163eaea9b903711586146}{$\sim$\+R\+Inside}} ()
+\item 
+void \mbox{\hyperlink{classRInside_a99a4d32d53bf76dfc4ff54b380c53b2a}{set\+Verbose}} (const bool \mbox{\hyperlink{MemBuf_8cpp_ab3f078684998b83967d507d0f453f454}{verbose}})
+\item 
+Rcpp\+::\+Environment\+::\+Binding \mbox{\hyperlink{classRInside_a1e4ad958b51464b460fb1b7e269aea24}{operator\mbox{[}$\,$\mbox{]}}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classRInside_a7cb402e6a651f3501d30196df4b45b0b}{repl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classRInside}{R\+Inside}} \& \mbox{\hyperlink{classRInside_a0936885fc91119ff2aef4c7f7c16c4dc}{instance}} ()
+\item 
+static \mbox{\hyperlink{classRInside}{R\+Inside}} $\ast$ \mbox{\hyperlink{classRInside_a4fc078382211131b308804742979bf74}{instance\+Ptr}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRInside_ae045f7e3d8b0881e2af8cdfb5c5fc118}{init\+\_\+tempdir}} (void)
+\item 
+void \mbox{\hyperlink{classRInside_af9920dd157552b7a5dce8573574ce78d}{init\+\_\+rand}} (void)
+\item 
+void \mbox{\hyperlink{classRInside_a41c250f2ef249a02a0d32e761628d943}{autoloads}} (void)
+\item 
+void \mbox{\hyperlink{classRInside_ae2c9851abd6c901ac031ae0abc50b763}{initialize}} (const int argc, const char $\ast$const argv\mbox{[}$\,$\mbox{]}, const bool load\+Rcpp, const bool \mbox{\hyperlink{MemBuf_8cpp_ab3f078684998b83967d507d0f453f454}{verbose}}, const bool interactive)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMemBuf}{Mem\+Buf}} \mbox{\hyperlink{classRInside_ad078e52002a242f7f5c94211ca3dd8be}{mb\+\_\+m}}
+\item 
+Rcpp\+::\+Environment $\ast$ \mbox{\hyperlink{classRInside_adbbac0cbbd4b9feded3d0ba4dee6a124}{global\+\_\+env\+\_\+m}}
+\item 
+bool \mbox{\hyperlink{classRInside_a186dad3e463fedc586f3d02784a814b2}{verbose\+\_\+m}}
+\item 
+bool \mbox{\hyperlink{classRInside_a0cfaf3f558d7ec24fe8422327b38d094}{interactive\+\_\+m}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classRInside}{R\+Inside}} $\ast$ \mbox{\hyperlink{classRInside_af960e45cc80ba75b1037ba29a169db60}{instance\+\_\+m}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 29 of file R\+Inside.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRInside_aa84dfe3db0d438a10b507257afb252e5}\label{classRInside_aa84dfe3db0d438a10b507257afb252e5}} 
+\index{RInside@{RInside}!RInside@{RInside}}
+\index{RInside@{RInside}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{RInside()}{RInside()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily R\+Inside\+::\+R\+Inside (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 56 of file R\+Inside.\+cpp.
+
+
+
+References initialize().
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classRInside_a5f447c350de81537e15d5aa1c0ecc428}\label{classRInside_a5f447c350de81537e15d5aa1c0ecc428}} 
+\index{RInside@{RInside}!RInside@{RInside}}
+\index{RInside@{RInside}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{RInside()}{RInside()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily R\+Inside\+::\+R\+Inside (\begin{DoxyParamCaption}\item[{const int}]{argc,  }\item[{const char $\ast$const}]{argv\mbox{[}$\,$\mbox{]},  }\item[{const bool}]{load\+Rcpp = {\ttfamily true},  }\item[{const bool}]{verbose = {\ttfamily false},  }\item[{const bool}]{interactive = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 98 of file R\+Inside.\+cpp.
+
+
+
+References verbose.
+
+\mbox{\Hypertarget{classRInside_a277fc333d12163eaea9b903711586146}\label{classRInside_a277fc333d12163eaea9b903711586146}} 
+\index{RInside@{RInside}!````~RInside@{$\sim$RInside}}
+\index{````~RInside@{$\sim$RInside}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{$\sim$RInside()}{~RInside()}}
+{\footnotesize\ttfamily R\+Inside\+::$\sim$\+R\+Inside (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file R\+Inside.\+cpp.
+
+
+
+References global\+\_\+env\+\_\+m, and instance\+\_\+m.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRInside_a0e41cbc2d996147fe39bfa2180e9598c}\label{classRInside_a0e41cbc2d996147fe39bfa2180e9598c}} 
+\index{RInside@{RInside}!assign@{assign}}
+\index{assign@{assign}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void R\+Inside\+::assign (\begin{DoxyParamCaption}\item[{const T \&}]{object,  }\item[{const std\+::string \&}]{nam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 78 of file R\+Inside.\+h.
+
+
+
+References global\+\_\+env\+\_\+m.
+
+
+
+Referenced by initialize(), and pass\+To\+R().
+
+\mbox{\Hypertarget{classRInside_a41c250f2ef249a02a0d32e761628d943}\label{classRInside_a41c250f2ef249a02a0d32e761628d943}} 
+\index{RInside@{RInside}!autoloads@{autoloads}}
+\index{autoloads@{autoloads}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{autoloads()}{autoloads()}}
+{\footnotesize\ttfamily void R\+Inside\+::autoloads (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 239 of file R\+Inside.\+cpp.
+
+
+
+References global\+\_\+env\+\_\+m, pack, packc, packobj, and packobjc.
+
+
+
+Referenced by initialize().
+
+\mbox{\Hypertarget{classRInside_af9920dd157552b7a5dce8573574ce78d}\label{classRInside_af9920dd157552b7a5dce8573574ce78d}} 
+\index{RInside@{RInside}!init\_rand@{init\_rand}}
+\index{init\_rand@{init\_rand}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{init\_rand()}{init\_rand()}}
+{\footnotesize\ttfamily void R\+Inside\+::init\+\_\+rand (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 230 of file R\+Inside.\+cpp.
+
+
+
+Referenced by initialize().
+
+\mbox{\Hypertarget{classRInside_ae045f7e3d8b0881e2af8cdfb5c5fc118}\label{classRInside_ae045f7e3d8b0881e2af8cdfb5c5fc118}} 
+\index{RInside@{RInside}!init\_tempdir@{init\_tempdir}}
+\index{init\_tempdir@{init\_tempdir}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{init\_tempdir()}{init\_tempdir()}}
+{\footnotesize\ttfamily void R\+Inside\+::init\+\_\+tempdir (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 212 of file R\+Inside.\+cpp.
+
+
+
+References setenv().
+
+
+
+Referenced by initialize().
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classRInside_ae2c9851abd6c901ac031ae0abc50b763}\label{classRInside_ae2c9851abd6c901ac031ae0abc50b763}} 
+\index{RInside@{RInside}!initialize@{initialize}}
+\index{initialize@{initialize}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void R\+Inside\+::initialize (\begin{DoxyParamCaption}\item[{const int}]{argc,  }\item[{const char $\ast$const}]{argv\mbox{[}$\,$\mbox{]},  }\item[{const bool}]{load\+Rcpp,  }\item[{const bool}]{verbose,  }\item[{const bool}]{interactive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 108 of file R\+Inside.\+cpp.
+
+
+
+References assign(), autoloads(), global\+\_\+env\+\_\+m, init\+\_\+rand(), init\+\_\+tempdir(), instance\+\_\+m, interactive\+\_\+m, program\+Name, R\+\_\+\+V\+A\+RS, setenv(), verbose, and verbose\+\_\+m.
+
+
+
+Referenced by R\+Inside().
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classRInside_a0936885fc91119ff2aef4c7f7c16c4dc}\label{classRInside_a0936885fc91119ff2aef4c7f7c16c4dc}} 
+\index{RInside@{RInside}!instance@{instance}}
+\index{instance@{instance}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRInside}{R\+Inside}} \& R\+Inside\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 416 of file R\+Inside.\+cpp.
+
+
+
+References instance\+\_\+m.
+
+\mbox{\Hypertarget{classRInside_a4fc078382211131b308804742979bf74}\label{classRInside_a4fc078382211131b308804742979bf74}} 
+\index{RInside@{RInside}!instancePtr@{instancePtr}}
+\index{instancePtr@{instancePtr}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{instancePtr()}{instancePtr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRInside}{R\+Inside}} $\ast$ R\+Inside\+::instance\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 420 of file R\+Inside.\+cpp.
+
+
+
+References instance\+\_\+m.
+
+\mbox{\Hypertarget{classRInside_a1e4ad958b51464b460fb1b7e269aea24}\label{classRInside_a1e4ad958b51464b460fb1b7e269aea24}} 
+\index{RInside@{RInside}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily Rcpp\+::\+Environment\+::\+Binding R\+Inside\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 412 of file R\+Inside.\+cpp.
+
+
+
+References global\+\_\+env\+\_\+m.
+
+\mbox{\Hypertarget{classRInside_a72826e179cbdefffa1dbb1f4c7fe79c7}\label{classRInside_a72826e179cbdefffa1dbb1f4c7fe79c7}} 
+\index{RInside@{RInside}!parseEval@{parseEval}}
+\index{parseEval@{parseEval}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{parseEval()}{parseEval()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRInside_1_1Proxy}{R\+Inside\+::\+Proxy}} R\+Inside\+::parse\+Eval (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption})}
+
+
+
+Definition at line 397 of file R\+Inside.\+cpp.
+
+
+
+References parse\+Eval().
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classRInside_a4cf10e78fb73bfda699f921c28e6b985}\label{classRInside_a4cf10e78fb73bfda699f921c28e6b985}} 
+\index{RInside@{RInside}!parseEval@{parseEval}}
+\index{parseEval@{parseEval}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{parseEval()}{parseEval()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int R\+Inside\+::parse\+Eval (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line,  }\item[{S\+E\+XP \&}]{ans }\end{DoxyParamCaption})}
+
+
+
+Definition at line 326 of file R\+Inside.\+cpp.
+
+
+
+References Mem\+Buf\+::add(), Mem\+Buf\+::get\+Buf\+Ptr(), global\+\_\+env\+\_\+m, mb\+\_\+m, program\+Name, Mem\+Buf\+::rewind(), and verbose\+\_\+m.
+
+
+
+Referenced by eval\+In\+R(), parse\+Eval(), parse\+Eval\+N\+T(), parse\+Eval\+Q(), and parse\+Eval\+Q\+N\+T().
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classRInside_a076f78eb50651e90dd93b8b1b9983917}\label{classRInside_a076f78eb50651e90dd93b8b1b9983917}} 
+\index{RInside@{RInside}!parseEvalNT@{parseEvalNT}}
+\index{parseEvalNT@{parseEvalNT}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{parseEvalNT()}{parseEvalNT()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRInside_1_1Proxy}{R\+Inside\+::\+Proxy}} R\+Inside\+::parse\+Eval\+NT (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption})}
+
+
+
+Definition at line 406 of file R\+Inside.\+cpp.
+
+
+
+References parse\+Eval().
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classRInside_a1b42c63503ccaf8563202af93cac3487}\label{classRInside_a1b42c63503ccaf8563202af93cac3487}} 
+\index{RInside@{RInside}!parseEvalQ@{parseEvalQ}}
+\index{parseEvalQ@{parseEvalQ}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{parseEvalQ()}{parseEvalQ()}}
+{\footnotesize\ttfamily void R\+Inside\+::parse\+EvalQ (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption})}
+
+
+
+Definition at line 384 of file R\+Inside.\+cpp.
+
+
+
+References parse\+Eval().
+
+
+
+Referenced by eval\+Quietly\+In\+R().
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classRInside_a29b9eb62d2c78a495f32ea5dc746af5c}\label{classRInside_a29b9eb62d2c78a495f32ea5dc746af5c}} 
+\index{RInside@{RInside}!parseEvalQNT@{parseEvalQNT}}
+\index{parseEvalQNT@{parseEvalQNT}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{parseEvalQNT()}{parseEvalQNT()}}
+{\footnotesize\ttfamily void R\+Inside\+::parse\+Eval\+Q\+NT (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption})}
+
+
+
+Definition at line 392 of file R\+Inside.\+cpp.
+
+
+
+References parse\+Eval().
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classRInside_a7cb402e6a651f3501d30196df4b45b0b}\label{classRInside_a7cb402e6a651f3501d30196df4b45b0b}} 
+\index{RInside@{RInside}!repl@{repl}}
+\index{repl@{repl}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{repl()}{repl()}}
+{\footnotesize\ttfamily void R\+Inside\+::repl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 424 of file R\+Inside.\+cpp.
+
+\mbox{\Hypertarget{classRInside_a99a4d32d53bf76dfc4ff54b380c53b2a}\label{classRInside_a99a4d32d53bf76dfc4ff54b380c53b2a}} 
+\index{RInside@{RInside}!setVerbose@{setVerbose}}
+\index{setVerbose@{setVerbose}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{setVerbose()}{setVerbose()}}
+{\footnotesize\ttfamily void R\+Inside\+::set\+Verbose (\begin{DoxyParamCaption}\item[{const bool}]{verbose }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 88 of file R\+Inside.\+h.
+
+
+
+References verbose, and verbose\+\_\+m.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRInside_adbbac0cbbd4b9feded3d0ba4dee6a124}\label{classRInside_adbbac0cbbd4b9feded3d0ba4dee6a124}} 
+\index{RInside@{RInside}!global\_env\_m@{global\_env\_m}}
+\index{global\_env\_m@{global\_env\_m}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{global\_env\_m}{global\_env\_m}}
+{\footnotesize\ttfamily Rcpp\+::\+Environment$\ast$ R\+Inside\+::global\+\_\+env\+\_\+m\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file R\+Inside.\+h.
+
+
+
+Referenced by assign(), autoloads(), initialize(), operator\mbox{[}$\,$\mbox{]}(), parse\+Eval(), and $\sim$\+R\+Inside().
+
+\mbox{\Hypertarget{classRInside_af960e45cc80ba75b1037ba29a169db60}\label{classRInside_af960e45cc80ba75b1037ba29a169db60}} 
+\index{RInside@{RInside}!instance\_m@{instance\_m}}
+\index{instance\_m@{instance\_m}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{instance\_m}{instance\_m}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRInside}{R\+Inside}} $\ast$ R\+Inside\+::instance\+\_\+m = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 44 of file R\+Inside.\+h.
+
+
+
+Referenced by initialize(), instance(), instance\+Ptr(), and $\sim$\+R\+Inside().
+
+\mbox{\Hypertarget{classRInside_a0cfaf3f558d7ec24fe8422327b38d094}\label{classRInside_a0cfaf3f558d7ec24fe8422327b38d094}} 
+\index{RInside@{RInside}!interactive\_m@{interactive\_m}}
+\index{interactive\_m@{interactive\_m}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{interactive\_m}{interactive\_m}}
+{\footnotesize\ttfamily bool R\+Inside\+::interactive\+\_\+m\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file R\+Inside.\+h.
+
+
+
+Referenced by initialize().
+
+\mbox{\Hypertarget{classRInside_ad078e52002a242f7f5c94211ca3dd8be}\label{classRInside_ad078e52002a242f7f5c94211ca3dd8be}} 
+\index{RInside@{RInside}!mb\_m@{mb\_m}}
+\index{mb\_m@{mb\_m}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{mb\_m}{mb\_m}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMemBuf}{Mem\+Buf}} R\+Inside\+::mb\+\_\+m\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 31 of file R\+Inside.\+h.
+
+
+
+Referenced by parse\+Eval().
+
+\mbox{\Hypertarget{classRInside_a186dad3e463fedc586f3d02784a814b2}\label{classRInside_a186dad3e463fedc586f3d02784a814b2}} 
+\index{RInside@{RInside}!verbose\_m@{verbose\_m}}
+\index{verbose\_m@{verbose\_m}!RInside@{RInside}}
+\doxysubsubsection{\texorpdfstring{verbose\_m}{verbose\_m}}
+{\footnotesize\ttfamily bool R\+Inside\+::verbose\+\_\+m\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 34 of file R\+Inside.\+h.
+
+
+
+Referenced by initialize(), parse\+Eval(), and set\+Verbose().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fab/\+Téléchargements/rinside-\/master/inst/include/\mbox{\hyperlink{RInside_8h}{R\+Inside.\+h}}\item 
+/home/fab/\+Téléchargements/rinside-\/master/src/\mbox{\hyperlink{RInside_8cpp}{R\+Inside.\+cpp}}\end{DoxyCompactItemize}

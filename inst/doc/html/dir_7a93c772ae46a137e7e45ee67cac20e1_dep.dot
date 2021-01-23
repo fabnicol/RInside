@@ -1,0 +1,14 @@
+digraph "/home/fab/Téléchargements" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_6fa4fa413285afce10fc1837291fe38d {
+    graph [ bgcolor="#ddddee", pencolor="black", label="fab" fontname="FreeSans", fontsize="10", URL="dir_6fa4fa413285afce10fc1837291fe38d.html"]
+  subgraph clusterdir_7a93c772ae46a137e7e45ee67cac20e1 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_7a93c772ae46a137e7e45ee67cac20e1.html"];
+    dir_7a93c772ae46a137e7e45ee67cac20e1 [shape=plaintext label="Téléchargements"];
+    dir_bfe553fca573eac1b70fcb749703eaad [shape=box label="rinside-master" color="red" fillcolor="white" style="filled" URL="dir_bfe553fca573eac1b70fcb749703eaad.html"];
+  }
+  }
+}

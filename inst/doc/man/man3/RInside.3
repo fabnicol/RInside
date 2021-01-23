@@ -1,0 +1,267 @@
+.TH "RInside" 3 "Tue Jan 19 2021" "RInside" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RInside
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <RInside\&.h>\fP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBProxy\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBparseEval\fP (const std::string &line, SEXP &ans)"
+.br
+.ti -1c
+.RI "void \fBparseEvalQ\fP (const std::string &line)"
+.br
+.ti -1c
+.RI "void \fBparseEvalQNT\fP (const std::string &line)"
+.br
+.ti -1c
+.RI "\fBProxy\fP \fBparseEval\fP (const std::string &line)"
+.br
+.ti -1c
+.RI "\fBProxy\fP \fBparseEvalNT\fP (const std::string &line)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBassign\fP (const T &object, const std::string &nam)"
+.br
+.ti -1c
+.RI "\fBRInside\fP ()"
+.br
+.ti -1c
+.RI "\fBRInside\fP (const int argc, const char *const argv[], const bool loadRcpp=true, const bool \fBverbose\fP=false, const bool interactive=false)"
+.br
+.ti -1c
+.RI "\fB~RInside\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetVerbose\fP (const bool \fBverbose\fP)"
+.br
+.ti -1c
+.RI "Rcpp::Environment::Binding \fBoperator[]\fP (const std::string &name)"
+.br
+.ti -1c
+.RI "void \fBrepl\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBRInside\fP & \fBinstance\fP ()"
+.br
+.ti -1c
+.RI "static \fBRInside\fP * \fBinstancePtr\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit_tempdir\fP (void)"
+.br
+.ti -1c
+.RI "void \fBinit_rand\fP (void)"
+.br
+.ti -1c
+.RI "void \fBautoloads\fP (void)"
+.br
+.ti -1c
+.RI "void \fBinitialize\fP (const int argc, const char *const argv[], const bool loadRcpp, const bool \fBverbose\fP, const bool interactive)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBMemBuf\fP \fBmb_m\fP"
+.br
+.ti -1c
+.RI "Rcpp::Environment * \fBglobal_env_m\fP"
+.br
+.ti -1c
+.RI "bool \fBverbose_m\fP"
+.br
+.ti -1c
+.RI "bool \fBinteractive_m\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static \fBRInside\fP * \fBinstance_m\fP = 0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 29 of file RInside\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "RInside::RInside ()"
+
+.PP
+Definition at line 56 of file RInside\&.cpp\&.
+.PP
+References initialize()\&.
+.SS "RInside::RInside (const int argc, const char *const argv[], const bool loadRcpp = \fCtrue\fP, const bool verbose = \fCfalse\fP, const bool interactive = \fCfalse\fP)"
+
+.PP
+Definition at line 98 of file RInside\&.cpp\&.
+.PP
+References verbose\&.
+.SS "RInside::~RInside ()"
+
+.PP
+Definition at line 43 of file RInside\&.cpp\&.
+.PP
+References global_env_m, and instance_m\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename T > void RInside::assign (const T & object, const std::string & nam)\fC [inline]\fP"
+
+.PP
+Definition at line 78 of file RInside\&.h\&.
+.PP
+References global_env_m\&.
+.PP
+Referenced by initialize(), and passToR()\&.
+.SS "void RInside::autoloads (void)\fC [private]\fP"
+
+.PP
+Definition at line 239 of file RInside\&.cpp\&.
+.PP
+References global_env_m, pack, packc, packobj, and packobjc\&.
+.PP
+Referenced by initialize()\&.
+.SS "void RInside::init_rand (void)\fC [private]\fP"
+
+.PP
+Definition at line 230 of file RInside\&.cpp\&.
+.PP
+Referenced by initialize()\&.
+.SS "void RInside::init_tempdir (void)\fC [private]\fP"
+
+.PP
+Definition at line 212 of file RInside\&.cpp\&.
+.PP
+References setenv()\&.
+.PP
+Referenced by initialize()\&.
+.SS "void RInside::initialize (const int argc, const char *const argv[], const bool loadRcpp, const bool verbose, const bool interactive)\fC [private]\fP"
+
+.PP
+Definition at line 108 of file RInside\&.cpp\&.
+.PP
+References assign(), autoloads(), global_env_m, init_rand(), init_tempdir(), instance_m, interactive_m, programName, R_VARS, setenv(), verbose, and verbose_m\&.
+.PP
+Referenced by RInside()\&.
+.SS "\fBRInside\fP & RInside::instance ()\fC [static]\fP"
+
+.PP
+Definition at line 416 of file RInside\&.cpp\&.
+.PP
+References instance_m\&.
+.SS "\fBRInside\fP * RInside::instancePtr ()\fC [static]\fP"
+
+.PP
+Definition at line 420 of file RInside\&.cpp\&.
+.PP
+References instance_m\&.
+.SS "Rcpp::Environment::Binding RInside::operator[] (const std::string & name)"
+
+.PP
+Definition at line 412 of file RInside\&.cpp\&.
+.PP
+References global_env_m\&.
+.SS "\fBRInside::Proxy\fP RInside::parseEval (const std::string & line)"
+
+.PP
+Definition at line 397 of file RInside\&.cpp\&.
+.PP
+References parseEval()\&.
+.SS "int RInside::parseEval (const std::string & line, SEXP & ans)"
+
+.PP
+Definition at line 326 of file RInside\&.cpp\&.
+.PP
+References MemBuf::add(), MemBuf::getBufPtr(), global_env_m, mb_m, programName, MemBuf::rewind(), and verbose_m\&.
+.PP
+Referenced by evalInR(), parseEval(), parseEvalNT(), parseEvalQ(), and parseEvalQNT()\&.
+.SS "\fBRInside::Proxy\fP RInside::parseEvalNT (const std::string & line)"
+
+.PP
+Definition at line 406 of file RInside\&.cpp\&.
+.PP
+References parseEval()\&.
+.SS "void RInside::parseEvalQ (const std::string & line)"
+
+.PP
+Definition at line 384 of file RInside\&.cpp\&.
+.PP
+References parseEval()\&.
+.PP
+Referenced by evalQuietlyInR()\&.
+.SS "void RInside::parseEvalQNT (const std::string & line)"
+
+.PP
+Definition at line 392 of file RInside\&.cpp\&.
+.PP
+References parseEval()\&.
+.SS "void RInside::repl ()"
+
+.PP
+Definition at line 424 of file RInside\&.cpp\&.
+.SS "void RInside::setVerbose (const bool verbose)\fC [inline]\fP"
+
+.PP
+Definition at line 88 of file RInside\&.h\&.
+.PP
+References verbose, and verbose_m\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "Rcpp::Environment* RInside::global_env_m\fC [private]\fP"
+
+.PP
+Definition at line 32 of file RInside\&.h\&.
+.PP
+Referenced by assign(), autoloads(), initialize(), operator[](), parseEval(), and ~RInside()\&.
+.SS "\fBRInside\fP * RInside::instance_m = 0\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 44 of file RInside\&.h\&.
+.PP
+Referenced by initialize(), instance(), instancePtr(), and ~RInside()\&.
+.SS "bool RInside::interactive_m\fC [private]\fP"
+
+.PP
+Definition at line 35 of file RInside\&.h\&.
+.PP
+Referenced by initialize()\&.
+.SS "\fBMemBuf\fP RInside::mb_m\fC [private]\fP"
+
+.PP
+Definition at line 31 of file RInside\&.h\&.
+.PP
+Referenced by parseEval()\&.
+.SS "bool RInside::verbose_m\fC [private]\fP"
+
+.PP
+Definition at line 34 of file RInside\&.h\&.
+.PP
+Referenced by initialize(), parseEval(), and setVerbose()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RInside from the source code\&.

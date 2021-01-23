@@ -1,0 +1,17 @@
+digraph "/home/fab/Téléchargements/rinside-master/src" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_bfe553fca573eac1b70fcb749703eaad {
+    graph [ bgcolor="#ddddee", pencolor="black", label="rinside-master" fontname="FreeSans", fontsize="10", URL="dir_bfe553fca573eac1b70fcb749703eaad.html"]
+  subgraph clusterdir_34b172d23abbbc3fd8aa5fc61bac93d8 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_34b172d23abbbc3fd8aa5fc61bac93d8.html"];
+    dir_34b172d23abbbc3fd8aa5fc61bac93d8 [shape=plaintext label="src"];
+    dir_9d01bfe9e6116cc08c2fb58dadc3f567 [shape=box label="setenv" color="black" fillcolor="white" style="filled" URL="dir_9d01bfe9e6116cc08c2fb58dadc3f567.html"];
+    dir_31d055a4391528cde158c3b8b89921eb [shape=box label="tools" color="black" fillcolor="white" style="filled" URL="dir_31d055a4391528cde158c3b8b89921eb.html"];
+  }
+  }
+  dir_4f5c9e3d527cacb670341c2d7831b6dc [shape=box label="inst" color="red" URL="dir_4f5c9e3d527cacb670341c2d7831b6dc.html"];
+  dir_34b172d23abbbc3fd8aa5fc61bac93d8->dir_4f5c9e3d527cacb670341c2d7831b6dc [headlabel="5", labeldistance=1.5 headhref="dir_000005_000003.html"];
+}

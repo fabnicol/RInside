@@ -1,0 +1,11 @@
+digraph "/home/fab" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_6fa4fa413285afce10fc1837291fe38d {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_6fa4fa413285afce10fc1837291fe38d.html"];
+    dir_6fa4fa413285afce10fc1837291fe38d [shape=plaintext label="fab"];
+    dir_7a93c772ae46a137e7e45ee67cac20e1 [shape=box label="Téléchargements" color="red" fillcolor="white" style="filled" URL="dir_7a93c772ae46a137e7e45ee67cac20e1.html"];
+  }
+}

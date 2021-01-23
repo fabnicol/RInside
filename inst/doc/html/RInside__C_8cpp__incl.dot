@@ -1,0 +1,41 @@
+digraph "/home/fab/Téléchargements/rinside-master/src/RInside_C.cpp"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="/home/fab/Téléchargements\l/rinside-master/src/RInside_C.cpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="RInside.h",height=0.2,width=0.4,color="black",URL="$RInside_8h.html",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="RInsideCommon.h",height=0.2,width=0.4,color="black",URL="$RInsideCommon_8h.html",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="RInsideConfig.h",height=0.2,width=0.4,color="black",URL="$RInsideConfig_8h.html",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="sys/time.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="sys/types.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="unistd.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node8 [label="inttypes.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node9 [label="stdint.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node10 [label="string",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node11 [label="vector",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node12 [label="iostream",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node13 [label="Rcpp.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node14 [label="Rembedded.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node15 [label="R_ext/RStartup.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node16 [label="MemBuf.h",height=0.2,width=0.4,color="black",URL="$MemBuf_8h.html",tooltip=" "];
+  Node2 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node17 [label="Callbacks.h",height=0.2,width=0.4,color="black",URL="$Callbacks_8h.html",tooltip=" "];
+  Node17 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+}

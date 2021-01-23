@@ -1,0 +1,160 @@
+\hypertarget{classMemBuf}{}\doxysection{Mem\+Buf Class Reference}
+\label{classMemBuf}\index{MemBuf@{MemBuf}}
+
+
+{\ttfamily \#include $<$Mem\+Buf.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMemBuf_ae5cd261b2167fdb718e795ecee5e131d}{Mem\+Buf}} (int sizebytes=1024)
+\item 
+\mbox{\hyperlink{classMemBuf_a84884d61f69e047814a365e8f0053829}{$\sim$\+Mem\+Buf}} ()
+\item 
+void \mbox{\hyperlink{classMemBuf_a4cb3b44d88059c382184ca7d1aa1f235}{resize}} ()
+\item 
+void \mbox{\hyperlink{classMemBuf_acecce3962e522cdcabba571ffd51f940}{rewind}} ()
+\item 
+void \mbox{\hyperlink{classMemBuf_a98f2f73b1dd34faf3c0180e3db6193d6}{add}} (const std\+::string \&)
+\item 
+const char $\ast$ \mbox{\hyperlink{classMemBuf_a0eb511f5c04d2357ab49d77ab4708ec2}{get\+Buf\+Ptr}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classMemBuf_ad9c60b3b35c630cedf2d96787d5adbc0}{buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 23 of file Mem\+Buf.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMemBuf_ae5cd261b2167fdb718e795ecee5e131d}\label{classMemBuf_ae5cd261b2167fdb718e795ecee5e131d}} 
+\index{MemBuf@{MemBuf}!MemBuf@{MemBuf}}
+\index{MemBuf@{MemBuf}!MemBuf@{MemBuf}}
+\doxysubsubsection{\texorpdfstring{MemBuf()}{MemBuf()}}
+{\footnotesize\ttfamily Mem\+Buf\+::\+Mem\+Buf (\begin{DoxyParamCaption}\item[{int}]{sizebytes = {\ttfamily 1024} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 34 of file Mem\+Buf.\+cpp.
+
+
+
+References buffer.
+
+\mbox{\Hypertarget{classMemBuf_a84884d61f69e047814a365e8f0053829}\label{classMemBuf_a84884d61f69e047814a365e8f0053829}} 
+\index{MemBuf@{MemBuf}!````~MemBuf@{$\sim$MemBuf}}
+\index{````~MemBuf@{$\sim$MemBuf}!MemBuf@{MemBuf}}
+\doxysubsubsection{\texorpdfstring{$\sim$MemBuf()}{~MemBuf()}}
+{\footnotesize\ttfamily Mem\+Buf\+::$\sim$\+Mem\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 32 of file Mem\+Buf.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMemBuf_a98f2f73b1dd34faf3c0180e3db6193d6}\label{classMemBuf_a98f2f73b1dd34faf3c0180e3db6193d6}} 
+\index{MemBuf@{MemBuf}!add@{add}}
+\index{add@{add}!MemBuf@{MemBuf}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Mem\+Buf\+::add (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{buf }\end{DoxyParamCaption})}
+
+
+
+Definition at line 46 of file Mem\+Buf.\+cpp.
+
+
+
+References buffer, and resize().
+
+
+
+Referenced by R\+Inside\+::parse\+Eval().
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classMemBuf_a0eb511f5c04d2357ab49d77ab4708ec2}\label{classMemBuf_a0eb511f5c04d2357ab49d77ab4708ec2}} 
+\index{MemBuf@{MemBuf}!getBufPtr@{getBufPtr}}
+\index{getBufPtr@{getBufPtr}!MemBuf@{MemBuf}}
+\doxysubsubsection{\texorpdfstring{getBufPtr()}{getBufPtr()}}
+{\footnotesize\ttfamily const char$\ast$ Mem\+Buf\+::get\+Buf\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 33 of file Mem\+Buf.\+h.
+
+
+
+References buffer.
+
+
+
+Referenced by R\+Inside\+::parse\+Eval().
+
+\mbox{\Hypertarget{classMemBuf_a4cb3b44d88059c382184ca7d1aa1f235}\label{classMemBuf_a4cb3b44d88059c382184ca7d1aa1f235}} 
+\index{MemBuf@{MemBuf}!resize@{resize}}
+\index{resize@{resize}!MemBuf@{MemBuf}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily void Mem\+Buf\+::resize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 38 of file Mem\+Buf.\+cpp.
+
+
+
+References buffer.
+
+
+
+Referenced by add().
+
+\mbox{\Hypertarget{classMemBuf_acecce3962e522cdcabba571ffd51f940}\label{classMemBuf_acecce3962e522cdcabba571ffd51f940}} 
+\index{MemBuf@{MemBuf}!rewind@{rewind}}
+\index{rewind@{rewind}!MemBuf@{MemBuf}}
+\doxysubsubsection{\texorpdfstring{rewind()}{rewind()}}
+{\footnotesize\ttfamily void Mem\+Buf\+::rewind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file Mem\+Buf.\+cpp.
+
+
+
+References buffer.
+
+
+
+Referenced by R\+Inside\+::parse\+Eval().
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMemBuf_ad9c60b3b35c630cedf2d96787d5adbc0}\label{classMemBuf_ad9c60b3b35c630cedf2d96787d5adbc0}} 
+\index{MemBuf@{MemBuf}!buffer@{buffer}}
+\index{buffer@{buffer}!MemBuf@{MemBuf}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily std\+::string Mem\+Buf\+::buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 25 of file Mem\+Buf.\+h.
+
+
+
+Referenced by add(), get\+Buf\+Ptr(), Mem\+Buf(), resize(), and rewind().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fab/\+Téléchargements/rinside-\/master/inst/include/\mbox{\hyperlink{MemBuf_8h}{Mem\+Buf.\+h}}\item 
+/home/fab/\+Téléchargements/rinside-\/master/src/\mbox{\hyperlink{MemBuf_8cpp}{Mem\+Buf.\+cpp}}\end{DoxyCompactItemize}

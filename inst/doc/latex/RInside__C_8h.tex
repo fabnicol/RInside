@@ -1,0 +1,97 @@
+\hypertarget{RInside__C_8h}{}\doxysection{/home/fab/\+Téléchargements/rinside-\/master/inst/include/\+R\+Inside\+\_\+C.h File Reference}
+\label{RInside__C_8h}\index{/home/fab/Téléchargements/rinside-\/master/inst/include/RInside\_C.h@{/home/fab/Téléchargements/rinside-\/master/inst/include/RInside\_C.h}}
+{\ttfamily \#include $<$Rinternals.\+h$>$}\newline
+Include dependency graph for R\+Inside\+\_\+\+C.\+h\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{RInside__C_8h_a01a048b35da1f84860b135e8af3d1f8c}{setup\+RinC}} ()
+\item 
+void \mbox{\hyperlink{RInside__C_8h_a2c64260e3560a8c7ccc4a7316a6b9716}{pass\+ToR}} (S\+E\+XP x, char $\ast$name)
+\item 
+S\+E\+XP \mbox{\hyperlink{RInside__C_8h_a7ac25f703ca004a27bfa500659b4a052}{eval\+InR}} (char $\ast$cmd)
+\item 
+void \mbox{\hyperlink{RInside__C_8h_a0e52d30dd81ece28444ff02b7c386173}{eval\+Quietly\+InR}} (char $\ast$cmd)
+\item 
+void \mbox{\hyperlink{RInside__C_8h_aa1487b1be23573c4852584d569e9fd9e}{teardown\+RinC}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{RInside__C_8h_a7ac25f703ca004a27bfa500659b4a052}\label{RInside__C_8h_a7ac25f703ca004a27bfa500659b4a052}} 
+\index{RInside\_C.h@{RInside\_C.h}!evalInR@{evalInR}}
+\index{evalInR@{evalInR}!RInside\_C.h@{RInside\_C.h}}
+\doxysubsubsection{\texorpdfstring{evalInR()}{evalInR()}}
+{\footnotesize\ttfamily S\+E\+XP eval\+InR (\begin{DoxyParamCaption}\item[{char $\ast$}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file R\+Inside\+\_\+\+C.\+cpp.
+
+
+
+References R\+Inside\+::parse\+Eval(), and rr.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{RInside__C_8h_a0e52d30dd81ece28444ff02b7c386173}\label{RInside__C_8h_a0e52d30dd81ece28444ff02b7c386173}} 
+\index{RInside\_C.h@{RInside\_C.h}!evalQuietlyInR@{evalQuietlyInR}}
+\index{evalQuietlyInR@{evalQuietlyInR}!RInside\_C.h@{RInside\_C.h}}
+\doxysubsubsection{\texorpdfstring{evalQuietlyInR()}{evalQuietlyInR()}}
+{\footnotesize\ttfamily void eval\+Quietly\+InR (\begin{DoxyParamCaption}\item[{char $\ast$}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file R\+Inside\+\_\+\+C.\+cpp.
+
+
+
+References R\+Inside\+::parse\+Eval\+Q(), and rr.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{RInside__C_8h_a2c64260e3560a8c7ccc4a7316a6b9716}\label{RInside__C_8h_a2c64260e3560a8c7ccc4a7316a6b9716}} 
+\index{RInside\_C.h@{RInside\_C.h}!passToR@{passToR}}
+\index{passToR@{passToR}!RInside\_C.h@{RInside\_C.h}}
+\doxysubsubsection{\texorpdfstring{passToR()}{passToR()}}
+{\footnotesize\ttfamily void pass\+ToR (\begin{DoxyParamCaption}\item[{S\+E\+XP}]{x,  }\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 31 of file R\+Inside\+\_\+\+C.\+cpp.
+
+
+
+References R\+Inside\+::assign(), and rr.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{RInside__C_8h_a01a048b35da1f84860b135e8af3d1f8c}\label{RInside__C_8h_a01a048b35da1f84860b135e8af3d1f8c}} 
+\index{RInside\_C.h@{RInside\_C.h}!setupRinC@{setupRinC}}
+\index{setupRinC@{setupRinC}!RInside\_C.h@{RInside\_C.h}}
+\doxysubsubsection{\texorpdfstring{setupRinC()}{setupRinC()}}
+{\footnotesize\ttfamily void setup\+RinC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file R\+Inside\+\_\+\+C.\+cpp.
+
+
+
+References rr.
+
+\mbox{\Hypertarget{RInside__C_8h_aa1487b1be23573c4852584d569e9fd9e}\label{RInside__C_8h_aa1487b1be23573c4852584d569e9fd9e}} 
+\index{RInside\_C.h@{RInside\_C.h}!teardownRinC@{teardownRinC}}
+\index{teardownRinC@{teardownRinC}!RInside\_C.h@{RInside\_C.h}}
+\doxysubsubsection{\texorpdfstring{teardownRinC()}{teardownRinC()}}
+{\footnotesize\ttfamily void teardown\+RinC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 48 of file R\+Inside\+\_\+\+C.\+cpp.
+
+
+
+References rr.
+

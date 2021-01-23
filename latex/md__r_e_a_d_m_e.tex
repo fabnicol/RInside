@@ -1,0 +1,34 @@
+\href{https://travis-ci.org/eddelbuettel/rinside}{\texttt{ }} \href{https://github.com/eddelbuettel/rinside/actions?query=workflow\%3Aci}{\texttt{ }} \href{http://www.gnu.org/licenses/gpl-2.0.html}{\texttt{ }} \href{https://cran.r-project.org/package=RInside}{\texttt{ }} \href{https://cran.r-project.org/package=RInside}{\texttt{ }} \href{https://packages.debian.org/sid/r-cran-rinside}{\texttt{ }} \href{https://cran.r-project.org/package=RInside}{\texttt{ }} \href{https://github.com/eddelbuettel/rinside}{\texttt{ }}\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysubsection{About}\label{md__r_e_a_d_m_e_autotoc_md1}
+The R\+Inside package provides a few classes for seamless embedding of \href{https://www.r-project.org}{\texttt{ R}} inside of C++ applications by relying on \href{http://www.rcpp.org}{\texttt{ Rcpp}}.\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{Examples}\label{md__r_e_a_d_m_e_autotoc_md2}
+Provided with the package itself are nine subdirectories with examples\+: from more than a dozen basic command-\/line examples (in directory {\ttfamily standard}) to graphical user-\/interfaces (using both \href{http://www.qt.io}{\texttt{ Qt}} and \href{http://www.webtoolkit.eu/wt}{\texttt{ Wt}}), linear algebra with \href{http://arma.sf.net}{\texttt{ Armadillo}} and \href{http://eigen.tuxfamily.org/index.php?title=Main_Page}{\texttt{ Eigen}}, parallel computing with M\+PI to a sandboxed server, and (since release 0.\+2.\+16) a simple (and more limited) interface for embedding insice C applications.
+
+The simplest example (modulo its header) is \href{inst/examples/standard/rinside_sample0.cpp}{\texttt{ examples/standard/rinside\+\_\+sample0.\+cpp}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{c++\}}
+\DoxyCodeLine{\#include <RInside.h>                    // for the embedded R via RInside}
+\DoxyCodeLine{}
+\DoxyCodeLine{int main(int argc, char *argv[]) \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    RInside R(argc, argv);              // create an embedded R instance}
+\DoxyCodeLine{}
+\DoxyCodeLine{    R["txt"] = "Hello, world!\(\backslash\)n";       // assign a char* (string) to 'txt'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    R.parseEvalQ("cat(txt)");           // eval the init string, ignoring any returns}
+\DoxyCodeLine{}
+\DoxyCodeLine{    exit(0);}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+The \href{https://github.com/eddelbuettel/rinside/tree/master/inst/examples/qt}{\texttt{ Qt example directory}} produces this application for showing how to use R (to estimate densities) inside a C++ executable (providing the G\+UI)\+:
+
+
+
+The code is portable across operating systems. Similar, the \href{https://github.com/eddelbuettel/rinside/tree/master/inst/examples/wt}{\texttt{ Wt example directory}} contains this C++-\/based web application doing the same\+:
+
+\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{See Also}\label{md__r_e_a_d_m_e_autotoc_md3}
+The \href{http://dirk.eddelbuettel.com/code/rinside.html}{\texttt{ R\+Inside}} web page has some more details.\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{Authors}\label{md__r_e_a_d_m_e_autotoc_md4}
+Dirk Eddelbuettel, Romain Francois, and Lance Bachmeier\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{License}\label{md__r_e_a_d_m_e_autotoc_md5}
+G\+PL ($>$= 2) 

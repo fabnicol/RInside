@@ -1,0 +1,100 @@
+.TH "MemBuf" 3 "Tue Jan 19 2021" "RInside" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MemBuf
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MemBuf\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMemBuf\fP (int sizebytes=1024)"
+.br
+.ti -1c
+.RI "\fB~MemBuf\fP ()"
+.br
+.ti -1c
+.RI "void \fBresize\fP ()"
+.br
+.ti -1c
+.RI "void \fBrewind\fP ()"
+.br
+.ti -1c
+.RI "void \fBadd\fP (const std::string &)"
+.br
+.ti -1c
+.RI "const char * \fBgetBufPtr\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBbuffer\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 23 of file MemBuf\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MemBuf::MemBuf (int sizebytes = \fC1024\fP)"
+
+.PP
+Definition at line 34 of file MemBuf\&.cpp\&.
+.PP
+References buffer\&.
+.SS "MemBuf::~MemBuf ()"
+
+.PP
+Definition at line 32 of file MemBuf\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void MemBuf::add (const std::string & buf)"
+
+.PP
+Definition at line 46 of file MemBuf\&.cpp\&.
+.PP
+References buffer, and resize()\&.
+.PP
+Referenced by RInside::parseEval()\&.
+.SS "const char* MemBuf::getBufPtr ()\fC [inline]\fP"
+
+.PP
+Definition at line 33 of file MemBuf\&.h\&.
+.PP
+References buffer\&.
+.PP
+Referenced by RInside::parseEval()\&.
+.SS "void MemBuf::resize ()"
+
+.PP
+Definition at line 38 of file MemBuf\&.cpp\&.
+.PP
+References buffer\&.
+.PP
+Referenced by add()\&.
+.SS "void MemBuf::rewind ()"
+
+.PP
+Definition at line 42 of file MemBuf\&.cpp\&.
+.PP
+References buffer\&.
+.PP
+Referenced by RInside::parseEval()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string MemBuf::buffer\fC [private]\fP"
+
+.PP
+Definition at line 25 of file MemBuf\&.h\&.
+.PP
+Referenced by add(), getBufPtr(), MemBuf(), resize(), and rewind()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RInside from the source code\&.
